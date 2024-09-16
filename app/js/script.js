@@ -16,7 +16,9 @@ const colorModeFromLocalStorage = () => {
 };
 
 const colorModeFromPreferences = () => {
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    return window.matchMedia('(prefers-color-scheme: dark)').matches
+        ? 'dark'
+        : 'light'
 };
 
 const loadAndUpdateColor = () => {
